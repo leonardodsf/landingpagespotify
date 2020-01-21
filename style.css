@@ -1,0 +1,241 @@
+/* layout body */
+html, body, .capa {
+  height: 100%;
+  overflow: auto;
+}
+
+body {
+  background: url('imagens/capa.png'), url('imagens/ruido.png'), linear-gradient(50deg,#ff4169,#7c26f8);
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+
+/* barra de navegação */
+.img-logo {
+  height: 40px;
+  width: 132px;
+  display: block;
+  background: url('imagens/spotify.svg') no-repeat;
+  background-size: contain;
+  color: transparent;
+}
+nav.navbar-transparent {
+  padding: 15px 0px;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+}
+.navbar-brand{
+  padding: 5px 15px;
+}
+.division {
+  width: 1px;
+  height: 16px;
+  background: white;
+  margin: 16px 10px;
+}
+.navbar-inverse .navbar-nav>li>a, footer .nav a {
+  color: white;
+}
+.navbar-inverse .navbar-nav>li>a:hover, footer .nav a:hover {
+  color: #9bf0e1;
+  background: none;
+}
+
+/* layout image-capa */
+.capa {
+  display: table;
+  width: 100%;
+}
+.text-capa {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
+}
+/* botoes */
+.btn-custom {
+  color: white;
+  border-radius: 500px;
+  -webkit-border-radius: 500px;
+  -moz-border-radius: 500px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background 0.4s, color 0.4s;
+}
+.btn-purple{
+  background: #7c25f8;
+}
+.btn-white{
+  border: 2px solid white;
+}
+.btn-purple:hover{
+  background: #6207e3;
+  color: white;
+}
+.btn-white:hover{
+  background-color: white;
+  color: black;
+}
+/* section services */
+#services {
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.albuns {
+  padding: 10px 0px 10px 0px;
+}
+/* resources section */
+#resources {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: white;
+}
+.rotation-iphone {
+  transform: rotate(30deg);
+  -ms-transform: rotate(30deg);/* IE 9 */
+  -webkit-transform: rotate(30deg); /* Chrome, Safari, Opera */
+  padding-left: 80px;
+}
+/* rodape */
+footer {
+  background: #000;
+  padding: 50px 0px 20px 0px;
+  position: relative;
+}
+.item-rede-social {
+  float: right;
+}
+.item-rede-social:hover {
+  float: right;
+  opacity: 50%;
+}
+
+/* tipografia */
+h1 {
+  font-weight: 900;
+  letter-spacing: -0.05em;
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+h3 {
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+#rodape h4 {
+  color: #919496;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+#services h2, #services h3{
+  color: #7c25f8;
+}
+#resources h3 {
+  color: #9bf0e1; 
+}
+/* Media Queries */
+/* xs < 768 */
+@media screen and (max-width: 767px) { 
+  h1 {
+    font-size: 50px;
+  }
+  .btn-custom {
+    margin: 10px 15px;
+  }
+  .img-logo {
+    margin-left: 40px;
+  }
+  .rotation-iphone {
+    transform: rotate(0deg);
+    -ms-transform: rotate(0deg);/* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    height: 590px;
+    margin-bottom: 160px;
+    padding-left: 80px;
+  }
+  #rodape h4 {
+    margin-top: 30px;
+    margin-left: 40px;
+    text-transform: uppercase;
+  }
+  #rodape ul>li>a {
+    margin-left: 40px;
+  } 
+  .image {
+    padding-bottom: 20px;
+  }s
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 70px;
+  }
+  .btn-custom {
+    margin: 10px 15px;
+  }
+  .rotation-iphone {
+    transform: rotate(25deg);
+    -ms-transform: rotate(25deg);/* IE 9 */
+    -webkit-transform: rotate(25deg); /* Chrome, Safari, Opera */
+    padding-left: 160px;
+    height: 600px;
+    margin-bottom: 220px;
+    margin-top: 80px;
+  }
+  #rodape h4 {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  #rodape ul>li>a {
+    margin-left: 40px;
+  } 
+  .image {
+    padding-bottom: 20px;
+  }
+}
+/* md */
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 80px;
+  }
+  .rotation-iphone {
+    width: 1500px;
+    padding-top: 70px;
+    margin-bottom: 80px;
+  }
+  #rodape h4 {
+    margin-left: 20px;
+  }
+  #rodape ul>li>a {
+    margin-left: 10px;
+  } 
+}
+/* lg */
+@media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 100px;
+  }
+  .btn-custom {
+    margin: 10px 15px;
+  }
+  .rotation-iphone {
+    width: 1400px;
+    padding-top: 70px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+  }
+  #rodape ul>li>a {
+    margin-left: 30px;
+  } 
+}
+/* end queries */
